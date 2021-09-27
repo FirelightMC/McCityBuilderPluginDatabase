@@ -1,8 +1,8 @@
-package com.firelight.McCityBuilderPlugin;
+package com.firelight.McCityBuilderPluginDatabase;
 
 import org.bukkit.plugin.java.JavaPlugin;
 
-public final class McCityBuilderPlugin extends JavaPlugin {
+public final class McCityBuilderPluginDatabase extends JavaPlugin {
 
     @Override
     public void onEnable() {
