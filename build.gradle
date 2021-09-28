@@ -24,6 +24,11 @@ repositories {
 
 dependencies {
     compileOnly 'io.papermc.paper:paper-api:1.17.1-R0.1-SNAPSHOT'
+    compileOnly "org.hibernate:hibernate-core:5.5.7.Final"
+
+    // https://mvnrepository.com/artifact/org.postgresql/postgresql
+    implementation group: 'org.postgresql', name: 'postgresql', version: '42.2.24'
+
 }
 
 group = 'com.firelight'
