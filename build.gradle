@@ -5,6 +5,7 @@
 plugins {
     id 'java-library'
     id 'maven-publish'
+    id 'java'
 }
 
 repositories {
@@ -22,13 +23,18 @@ repositories {
     }
 }
 
+
 dependencies {
     compileOnly 'io.papermc.paper:paper-api:1.17.1-R0.1-SNAPSHOT'
-    compileOnly "org.hibernate:hibernate-core:5.5.7.Final"
+
+    // https://mvnrepository.com/artifact/com.j256.ormlite/ormlite-core
+    implementation group: 'com.j256.ormlite', name: 'ormlite-core', version: '4.48'
+
+    // https://mvnrepository.com/artifact/com.j256.ormlite/ormlite-jdbc
+    implementation group: 'com.j256.ormlite', name: 'ormlite-jdbc', version: '5.6'
 
     // https://mvnrepository.com/artifact/org.postgresql/postgresql
     implementation group: 'org.postgresql', name: 'postgresql', version: '42.2.24'
-
 }
 
 group = 'com.firelight'

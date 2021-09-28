@@ -1,4 +1,4 @@
 name: McCityBuilderPluginDatabase
 version: '${project.version}'
-main: com.firelight.McCityBuilderPluginDatabase
+main: com.firelight.McCityBuilderPluginDatabase.McCityBuilderPluginDatabase
 api-version: 1.17
